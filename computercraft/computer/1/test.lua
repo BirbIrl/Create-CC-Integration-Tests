@@ -2,8 +2,8 @@ local util = require "lib.util"
 
 util.callForReload()
 local tests = {
- "packager",
- "repackager",
+	"packager",
+	"repackager",
 	"frogport",
 	"redstoneRequester",
 	"tableCloth",
