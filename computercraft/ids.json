@@ -1,0 +1,14 @@
+{
+  "computer": 5,
+  "peripheral.computer": 5,
+  "peripheral.minecraft:barrel": 15,
+  "peripheral.Create_Packager": 16,
+  "peripheral.Create_RedstoneRequester": 3,
+  "peripheral.Create_Repackager": 8,
+  "peripheral.redstone_relay": 2,
+  "peripheral.Create_StockTicker": 7,
+  "peripheral.Create_Frogport": 9,
+  "peripheral.Create_DisplayLink": 1,
+  "peripheral.create:mechanical_crafter": 0,
+  "peripheral.Create_TableClothShop": 6
+}
