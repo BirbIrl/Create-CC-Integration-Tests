@@ -401,7 +401,7 @@ local states = {
 				_type = "error",
 			},
 			requestFiltered = {
-				result = 0,
+				_type = "error",
 			},
 			list = {
 				result = {},
@@ -434,21 +434,6 @@ local states = {
 						nbt = "3e7dca4b751bb394a0ee693b76bc1a90",
 					},
 					{
-						name = "minecraft:enchanted_book",
-						count = 2,
-						nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
-					},
-					{
-						name = "minecraft:enchanted_book",
-						count = 2,
-						nbt = "7bcff03383475bd90a29eb7568166ac9",
-					},
-					{
-						name = "minecraft:enchanted_book",
-						count = 2,
-						nbt = "c752841147c814133f9ba7bca4ebe2de",
-					},
-					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
 						nbt = "f522a52b53f293ba7be8a34c7e38587b",
@@ -462,6 +447,21 @@ local states = {
 						name = "minecraft:diamond_helmet",
 						count = 1,
 						nbt = "e76380dc6d3603de360d78b68410e380",
+					},
+					{
+						name = "minecraft:enchanted_book",
+						count = 2,
+						nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
+					},
+					{
+						name = "minecraft:enchanted_book",
+						count = 2,
+						nbt = "7bcff03383475bd90a29eb7568166ac9",
+					},
+					{
+						name = "minecraft:enchanted_book",
+						count = 2,
+						nbt = "c752841147c814133f9ba7bca4ebe2de",
 					},
 				},
 			},
