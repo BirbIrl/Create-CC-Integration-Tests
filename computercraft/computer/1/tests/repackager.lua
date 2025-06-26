@@ -387,11 +387,176 @@ local states = {
 			getAddress = {
 				result = "signAddress",
 			},
+			["getItemDetail\\withArgs"] = {
+				result = {
+					["package\\recursive"] = {
+						isValid = {
+							result = true,
+						},
+						["getItemDetail\\withArgs"] = {
+							result = {
+								name = "minecraft:diamond",
+								itemGroups = {},
+								tags = {
+									["forge:gems/diamond"] = true,
+									["minecraft:trim_materials"] = true,
+									["forge:gems"] = true,
+									["minecraft:beacon_payment_items"] = true,
+								},
+								count = 4,
+								maxCount = 64,
+								displayName = "Diamond",
+							},
+							_args = {
+								1,
+							},
+						},
+						list = {
+							result = {
+								{
+									name = "minecraft:diamond",
+									count = 4,
+								},
+							},
+						},
+						getAddress = {
+							result = "originalAddress",
+						},
+						["getOrderData\\recursive"] = {
+							result = {
+								getLinkIndex = {
+									result = 2,
+								},
+								["getItemDetail\\withArgs"] = {
+									_args = {
+										1,
+									},
+								},
+								list = {},
+								getCrafts = {},
+								isFinalLink = {
+									result = false,
+								},
+								isFinal = {
+									result = true,
+								},
+								getIndex = {
+									result = 1,
+								},
+							},
+						},
+					},
+					itemGroups = {},
+					name = "create:cardboard_package_12x10",
+					tags = {
+						["create:packages"] = true,
+					},
+					nbt = "fb8f5b337b68e7e16da274ce177b4cfe",
+					count = 1,
+					maxCount = 1,
+					displayName = "Cardboard Package",
+				},
+				_args = {
+					1,
+				},
+			},
+			list = {
+				result = {
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "fb8f5b337b68e7e16da274ce177b4cfe",
+					},
+					{
+						name = "create:cardboard_package_12x12",
+						count = 1,
+						nbt = "20da0cc6744c32a37deb63c2215196bc",
+					},
+					{
+						name = "create:cardboard_package_12x12",
+						count = 1,
+						nbt = "3b4c9133962640feca4df20b20302471",
+					},
+				},
+			},
 		},
 		{
 			getPackage = {},
 			getAddress = {
 				result = "",
+			},
+			["getItemDetail\\withArgs"] = {
+				result = {
+					["package\\recursive"] = {
+						isValid = {
+							result = true,
+						},
+						["getItemDetail\\withArgs"] = {
+							result = {
+								name = "minecraft:stick",
+								itemGroups = {},
+								tags = {
+									["forge:rods/wooden"] = true,
+									["forge:rods"] = true,
+								},
+								count = 1,
+								maxCount = 64,
+								displayName = "Stick",
+							},
+							_args = {
+								1,
+							},
+						},
+						list = {
+							result = {
+								{
+									name = "minecraft:stick",
+									count = 1,
+								},
+							},
+						},
+						getOrderData = {},
+						getAddress = {
+							result = "",
+						},
+					},
+					itemGroups = {},
+					name = "create:cardboard_package_12x10",
+					tags = {
+						["create:packages"] = true,
+					},
+					nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					count = 1,
+					maxCount = 1,
+					displayName = "Cardboard Package",
+				},
+				_args = {
+					1,
+				},
+			},
+			list = {
+				result = {
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+				},
 			},
 		},
 		{
@@ -399,11 +564,164 @@ local states = {
 			getAddress = {
 				result = "signAddress",
 			},
+			["getItemDetail\\withArgs"] = {
+				result = {
+					["package\\recursive"] = {
+						isValid = {
+							result = true,
+						},
+						["getItemDetail\\withArgs"] = {
+							result = {
+								name = "minecraft:stick",
+								itemGroups = {},
+								tags = {
+									["forge:rods/wooden"] = true,
+									["forge:rods"] = true,
+								},
+								count = 1,
+								maxCount = 64,
+								displayName = "Stick",
+							},
+							_args = {
+								1,
+							},
+						},
+						list = {
+							result = {
+								{
+									name = "minecraft:stick",
+									count = 1,
+								},
+							},
+						},
+						getOrderData = {},
+						getAddress = {
+							result = "",
+						},
+					},
+					itemGroups = {},
+					name = "create:cardboard_package_12x10",
+					tags = {
+						["create:packages"] = true,
+					},
+					nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					count = 1,
+					maxCount = 1,
+					displayName = "Cardboard Package",
+				},
+				_args = {
+					1,
+				},
+			},
+			list = {
+				result = {
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+					{
+						name = "create:cardboard_package_12x10",
+						count = 1,
+						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					},
+				},
+			},
 		},
 		{
 			getPackage = {},
 			getAddress = {
 				result = "",
+			},
+			["getItemDetail\\withArgs"] = {
+				result = {
+					["package\\recursive"] = {
+						isValid = {
+							result = true,
+						},
+						["getItemDetail\\withArgs"] = {
+							result = {
+								name = "minecraft:stick",
+								itemGroups = {},
+								tags = {
+									["forge:rods/wooden"] = true,
+									["forge:rods"] = true,
+								},
+								count = 1,
+								maxCount = 64,
+								displayName = "Stick",
+							},
+							_args = {
+								1,
+							},
+						},
+						list = {
+							result = {
+								{
+									name = "minecraft:stick",
+									count = 1,
+								},
+							},
+						},
+						getAddress = {
+							result = "originalAddress",
+						},
+						["getOrderData\\recursive"] = {
+							result = {
+								getLinkIndex = {
+									result = 2,
+								},
+								["getItemDetail\\withArgs"] = {
+									_args = {
+										1,
+									},
+								},
+								list = {},
+								getCrafts = {},
+								isFinalLink = {
+									result = true,
+								},
+								isFinal = {
+									result = true,
+								},
+								getIndex = {
+									result = 1,
+								},
+							},
+						},
+					},
+					itemGroups = {},
+					name = "create:cardboard_package_10x12",
+					tags = {
+						["create:packages"] = true,
+					},
+					nbt = "d737660ea29804f4772ee62c6e6613ea",
+					count = 1,
+					maxCount = 1,
+					displayName = "Cardboard Package",
+				},
+				_args = {
+					1,
+				},
+			},
+			list = {
+				result = {
+					{
+						name = "create:cardboard_package_10x12",
+						count = 1,
+						nbt = "d737660ea29804f4772ee62c6e6613ea",
+					},
+				},
 			},
 		},
 	},
