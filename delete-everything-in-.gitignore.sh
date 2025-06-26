@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 while IFS= read -r line; do
 	if [ $line = "#script-break" ]; then
 		exit
