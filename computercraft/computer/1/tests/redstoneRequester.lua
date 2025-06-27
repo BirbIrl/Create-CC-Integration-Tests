@@ -262,7 +262,7 @@ local states = {
 			},
 			["getPackage\\recursive"] = {
 				result = {
-					isValid = {
+					isEditable = {
 						result = true,
 					},
 					["getItemDetail\\withArgs"] = {
@@ -354,7 +354,7 @@ local states = {
 			},
 			["getPackage\\recursive"] = {
 				result = {
-					isValid = {
+					isEditable = {
 						result = true,
 					},
 					["getItemDetail\\withArgs"] = {

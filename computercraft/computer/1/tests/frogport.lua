@@ -12,8 +12,8 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
+						isEditable = {
+							result = false,
 						},
 						["getItemDetail\\withArgs"] = {
 							result = {

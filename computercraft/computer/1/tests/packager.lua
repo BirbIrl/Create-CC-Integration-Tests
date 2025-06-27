@@ -186,9 +186,6 @@ local states = {
 				},
 				["getPackage\\recursive"] = {
 					result = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:apple",
@@ -210,17 +207,19 @@ local states = {
 								},
 							},
 						},
-						getOrderData = {},
+						isEditable = {
+							result = true,
+						},
 						getAddress = {
 							result = "signAddress",
 						},
+						getOrderData = {},
 					},
 				},
 			},
 		},
 		encoded = {
 			pre = {
-
 				list = {
 					_type = "error",
 				},
@@ -235,9 +234,6 @@ local states = {
 				},
 				["getPackage\\recursive"] = {
 					result = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:oak_planks",
@@ -260,6 +256,9 @@ local states = {
 									count = 1,
 								},
 							},
+						},
+						isEditable = {
+							result = true,
 						},
 						getAddress = {
 							result = "originalAddress",

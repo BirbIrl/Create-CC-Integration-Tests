@@ -1,9 +1,3 @@
---[[
-getAddress
-getPackage
-makePackage
-setAddress
---]]
 local util = require("..lib.util")
 local pretty = require("cc.pretty")
 local pprint = pretty.pretty_print
@@ -29,9 +23,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:diamond",
@@ -57,6 +48,9 @@ local states = {
 									count = 4,
 								},
 							},
+						},
+						isEditable = {
+							result = false,
 						},
 						getAddress = {
 							result = "originalAddress",
@@ -120,7 +114,6 @@ local states = {
 			},
 		},
 		{
-
 			size = {
 				result = 27,
 			},
@@ -133,9 +126,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
@@ -160,10 +150,13 @@ local states = {
 								},
 							},
 						},
-						getOrderData = {},
+						isEditable = {
+							result = false,
+						},
 						getAddress = {
 							result = "",
 						},
+						getOrderData = {},
 					},
 					itemGroups = {},
 					name = "create:cardboard_package_12x10",
@@ -217,9 +210,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
@@ -244,10 +234,13 @@ local states = {
 								},
 							},
 						},
-						getOrderData = {},
+						isEditable = {
+							result = false,
+						},
 						getAddress = {
 							result = "",
 						},
+						getOrderData = {},
 					},
 					itemGroups = {},
 					name = "create:cardboard_package_12x10",
@@ -301,9 +294,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
@@ -327,6 +317,9 @@ local states = {
 									count = 1,
 								},
 							},
+						},
+						isEditable = {
+							result = false,
 						},
 						getAddress = {
 							result = "originalAddress",
@@ -390,9 +383,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:diamond",
@@ -418,6 +408,9 @@ local states = {
 									count = 4,
 								},
 							},
+						},
+						isEditable = {
+							result = false,
 						},
 						getAddress = {
 							result = "originalAddress",
@@ -488,9 +481,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
@@ -515,10 +505,13 @@ local states = {
 								},
 							},
 						},
-						getOrderData = {},
+						isEditable = {
+							result = false,
+						},
 						getAddress = {
 							result = "",
 						},
+						getOrderData = {},
 					},
 					itemGroups = {},
 					name = "create:cardboard_package_12x10",
@@ -567,9 +560,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
@@ -594,10 +584,13 @@ local states = {
 								},
 							},
 						},
-						getOrderData = {},
+						isEditable = {
+							result = false,
+						},
 						getAddress = {
 							result = "",
 						},
+						getOrderData = {},
 					},
 					itemGroups = {},
 					name = "create:cardboard_package_12x10",
@@ -646,9 +639,6 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					["package\\recursive"] = {
-						isValid = {
-							result = true,
-						},
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
@@ -672,6 +662,9 @@ local states = {
 									count = 1,
 								},
 							},
+						},
+						isEditable = {
+							result = false,
 						},
 						getAddress = {
 							result = "originalAddress",
@@ -727,9 +720,6 @@ local states = {
 	},
 	packages = {
 		{
-			isValid = {
-				result = true,
-			},
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:diamond",
@@ -771,6 +761,9 @@ local states = {
 						count = 1,
 					},
 				},
+			},
+			isEditable = {
+				result = true,
 			},
 			getAddress = {
 				result = "originalAddress",
@@ -815,9 +808,6 @@ local states = {
 			},
 		},
 		{
-			isValid = {
-				result = true,
-			},
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:stick",
@@ -842,13 +832,16 @@ local states = {
 					},
 				},
 			},
-			getOrderData = {},
+			isEditable = {
+				result = true,
+			},
 			getAddress = {
 				result = "",
 			},
+			getOrderData = {},
 		},
 		{
-			isValid = {
+			isEditable = {
 				result = true,
 			},
 			["getItemDetail\\withArgs"] = {
@@ -881,7 +874,7 @@ local states = {
 			},
 		},
 		{
-			isValid = {
+			isEditable = {
 				result = true,
 			},
 			["getItemDetail\\withArgs"] = {
