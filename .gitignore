@@ -9,6 +9,7 @@ poi
 entities
 session.lock
 level.dat_old
+chunkloaders
 data/raids.dat
 data/create_Tracks.dat
 data/create_logistics.dat_old
