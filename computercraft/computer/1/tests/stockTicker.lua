@@ -504,6 +504,7 @@ local filters = {
 
 -- second request seems to request only the first three books, one by one
 for num, filter in ipairs(filters) do
+	tickers[num].requestFiltered("", table.unpack(filter))
 	if num == 1 then
 		if not #packagers[num].list() == 5 then
 			error("packager " .. num .. "'s .list() returned the wrong number of items")
