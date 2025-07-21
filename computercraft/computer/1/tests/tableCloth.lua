@@ -9,7 +9,7 @@ local states = {
 					itemGroups = {},
 					tags = {},
 					count = 0,
-					maxCount = 64,
+					maxCount = 1,
 					displayName = "Air",
 				},
 			},
@@ -20,8 +20,18 @@ local states = {
 				result = {
 					{
 						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
 						count = 1,
 						maxCount = 64,
 						displayName = "Apple",
@@ -56,8 +66,18 @@ local states = {
 			getPriceTagItem = {
 				result = {
 					name = "minecraft:apple",
-					itemGroups = {},
-					tags = {},
+					itemGroups = {
+						{
+							id = "minecraft:food_and_drinks",
+							displayName = "Food & Drinks",
+						},
+					},
+					tags = {
+						["c:foods/fruit"] = true,
+						["c:animal_foods"] = true,
+						["c:foods"] = true,
+						["minecraft:horse_food"] = true,
+					},
 					count = 1,
 					maxCount = 64,
 					displayName = "Apple",
@@ -69,87 +89,156 @@ local states = {
 			getWares = {
 				result = {
 					{
-						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
 						count = 1,
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
+						name = "minecraft:apple",
 						maxCount = 64,
 						displayName = "Apple",
 					},
 					{
-						name = "minecraft:stick",
-						itemGroups = {},
-						tags = {
-							["forge:rods/wooden"] = true,
-							["forge:rods"] = true,
-						},
 						count = 2,
+						itemGroups = {
+							{
+								id = "minecraft:ingredients",
+								displayName = "Ingredients",
+							},
+						},
+						tags = {
+							["c:rods/wooden"] = true,
+							["c:rods"] = true,
+						},
+						name = "minecraft:stick",
 						maxCount = 64,
 						displayName = "Stick",
 					},
 					{
-						tags = {
-							["minecraft:pickaxes"] = true,
-							["minecraft:breaks_decorated_pots"] = true,
-							["forge:tools"] = true,
-							["minecraft:cluster_max_harvestables"] = true,
-							["minecraft:tools"] = true,
+						damage = 0,
+						itemGroups = {
+							{
+								id = "minecraft:tools_and_utilities",
+								displayName = "Tools & Utilities",
+							},
 						},
-						nbt = "552887824c43124013fd24f6edcde0fb",
-						displayName = "Diamond Pickaxe",
 						name = "minecraft:diamond_pickaxe",
-						itemGroups = {},
+						tags = {
+							["c:tools"] = true,
+							["minecraft:enchantable/durability"] = true,
+							["minecraft:enchantable/vanishing"] = true,
+							["minecraft:pickaxes"] = true,
+							["minecraft:enchantable/mining_loot"] = true,
+							["minecraft:cluster_max_harvestables"] = true,
+							["minecraft:enchantable/mining"] = true,
+							["minecraft:trimmable_armor"] = true,
+							["minecraft:breaks_decorated_pots"] = true,
+							["c:tools/mining_tool"] = true,
+							["c:enchantables"] = true,
+						},
 						maxDamage = 1561,
 						count = 1,
 						maxCount = 1,
-						damage = 0,
+						displayName = "Diamond Pickaxe",
 					},
 					{
-						name = "minecraft:diamond",
-						itemGroups = {},
+						count = 1,
+						itemGroups = {
+							{
+								id = "minecraft:ingredients",
+								displayName = "Ingredients",
+							},
+						},
 						tags = {
-							["forge:gems/diamond"] = true,
+							["c:gems/diamond"] = true,
+							["c:gems"] = true,
 							["minecraft:trim_materials"] = true,
-							["forge:gems"] = true,
 							["minecraft:beacon_payment_items"] = true,
 						},
-						count = 1,
+						name = "minecraft:diamond",
 						maxCount = 64,
 						displayName = "Diamond",
 					},
 					{
-						name = "minecraft:redstone",
-						itemGroups = {},
-						tags = {
-							["forge:dusts"] = true,
-							["minecraft:trim_materials"] = true,
-							["forge:dusts/redstone"] = true,
-						},
 						count = 256,
+						itemGroups = {
+							{
+								id = "minecraft:redstone_blocks",
+								displayName = "Redstone Blocks",
+							},
+							{
+								id = "minecraft:ingredients",
+								displayName = "Ingredients",
+							},
+						},
+						tags = {
+							["c:dusts"] = true,
+							["minecraft:trim_materials"] = true,
+							["c:dusts/redstone"] = true,
+						},
+						name = "minecraft:redstone",
 						maxCount = 64,
 						displayName = "Redstone Dust",
 					},
 					{
-						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
 						count = 1,
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
+						name = "minecraft:apple",
 						maxCount = 64,
 						displayName = "Apple",
 					},
 					{
-						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
 						count = 1,
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
+						name = "minecraft:apple",
 						maxCount = 64,
 						displayName = "Apple",
 					},
 					{
-						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
 						count = 1,
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
+						name = "minecraft:apple",
 						maxCount = 64,
 						displayName = "Apple",
 					},
@@ -161,24 +250,23 @@ local states = {
 			getAddress = {
 				result = "thing",
 			},
+		}, {
+		getPriceTagItem = {
+			_type = "error",
 		},
-		{
-			getPriceTagItem = {
-				_type = "error",
-			},
-			isShop = {
-				result = false,
-			},
-			getWares = {
-				_type = "error",
-			},
-			getPriceTagCount = {
-				_type = "error",
-			},
-			getAddress = {
-				_type = "error",
-			},
+		isShop = {
+			result = false,
 		},
+		getWares = {
+			_type = "error",
+		},
+		getPriceTagCount = {
+			_type = "error",
+		},
+		getAddress = {
+			_type = "error",
+		},
+	},
 	},
 }
 
