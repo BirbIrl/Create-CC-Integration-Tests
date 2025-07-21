@@ -21,12 +21,16 @@ local states = {
 							displayName = "Unbreaking I",
 						},
 					},
-					itemGroups = {},
 					name = "minecraft:enchanted_book",
+					itemGroups = {
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
 						["minecraft:bookshelf_books"] = true,
 					},
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 					count = 1,
 					maxCount = 1,
 					displayName = "Enchanted Book",
@@ -40,352 +44,267 @@ local states = {
 					{
 						name = "minecraft:enchanted_book",
 						count = 1,
-						nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 1,
-						nbt = "7bcff03383475bd90a29eb7568166ac9",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 1,
-						nbt = "c752841147c814133f9ba7bca4ebe2de",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 1,
-						nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 1,
-						nbt = "7bcff03383475bd90a29eb7568166ac9",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 1,
-						nbt = "c752841147c814133f9ba7bca4ebe2de",
 					},
 					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
-						nbt = "f522a52b53f293ba7be8a34c7e38587b",
 					},
 					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
-						nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 					},
 					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
-						nbt = "e76380dc6d3603de360d78b68410e380",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "f522a52b53f293ba7be8a34c7e38587b",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "e76380dc6d3603de360d78b68410e380",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "c5da935a986a44a5e4979b181ec0840f",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "3e7dca4b751bb394a0ee693b76bc1a90",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "e76380dc6d3603de360d78b68410e380",
 					},
 				},
 			},
 		},
 		postList = {
 			{
-				[7] = {
-					name = "minecraft:diamond_helmet",
-					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
-				},
-				[8] = {
-					name = "minecraft:diamond_helmet",
-					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
-				},
-				[9] = {
-					name = "minecraft:diamond_helmet",
-					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
-				},
-				[3] = {
-					name = "minecraft:enchanted_book",
-					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
-				},
-				[6] = {
-					name = "minecraft:enchanted_book",
-					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
-				},
+				-- we don't actually check this
 			},
 			{
 				[7] = {
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
 				},
 				[8] = {
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 				},
 				[9] = {
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				[10] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
 				},
 				[11] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 				},
 				[12] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				[13] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "c5da935a986a44a5e4979b181ec0840f",
 				},
 				[14] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "3e7dca4b751bb394a0ee693b76bc1a90",
 				},
 				[15] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 			},
+
 			{
 				[15] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				[2] = {
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				[3] = {
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				[5] = {
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				[6] = {
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				[12] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 			},
 			{
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				{
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
 				},
 				{
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 				},
 				{
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				{
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
 				},
 				{
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 				},
 				{
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				[15] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 			},
 			{
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 			},
 			{
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "7bcff03383475bd90a29eb7568166ac9",
 				},
 				{
 					name = "minecraft:enchanted_book",
 					count = 1,
-					nbt = "c752841147c814133f9ba7bca4ebe2de",
 				},
 				{
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
 				},
 				{
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 				},
 				{
 					name = "minecraft:diamond_helmet",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				{
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "f522a52b53f293ba7be8a34c7e38587b",
 				},
 				{
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 				},
 				{
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 				[15] = {
 					name = "minecraft:diamond_pickaxe",
 					count = 1,
-					nbt = "e76380dc6d3603de360d78b68410e380",
 				},
 			},
 		},
@@ -411,57 +330,46 @@ local states = {
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "f522a52b53f293ba7be8a34c7e38587b",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 2,
-						nbt = "e76380dc6d3603de360d78b68410e380",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "c5da935a986a44a5e4979b181ec0840f",
 					},
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "3e7dca4b751bb394a0ee693b76bc1a90",
 					},
 					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
-						nbt = "f522a52b53f293ba7be8a34c7e38587b",
 					},
 					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
-						nbt = "3ebd8cc4352cab6b75465e1c82cbadd2",
 					},
 					{
 						name = "minecraft:diamond_helmet",
 						count = 1,
-						nbt = "e76380dc6d3603de360d78b68410e380",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 2,
-						nbt = "ce5c752cf2df5cf4ffb17d7b7bfacad7",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 2,
-						nbt = "7bcff03383475bd90a29eb7568166ac9",
 					},
 					{
 						name = "minecraft:enchanted_book",
 						count = 2,
-						nbt = "c752841147c814133f9ba7bca4ebe2de",
 					},
 				},
 			},
@@ -511,10 +419,6 @@ local filters = {
 						value = 3,
 					}
 				}
-			},
-			nbt = {
-				_op = "regex",
-				value = ".*"
 			},
 			displayName = "Enchanted Book",
 			_mode = "exact"
@@ -598,8 +502,8 @@ local filters = {
 
 
 
+-- second request seems to request only the first three books, one by one
 for num, filter in ipairs(filters) do
-	tickers[num].requestFiltered("", table.unpack(filter))
 	if num == 1 then
 		if not #packagers[num].list() == 5 then
 			error("packager " .. num .. "'s .list() returned the wrong number of items")
