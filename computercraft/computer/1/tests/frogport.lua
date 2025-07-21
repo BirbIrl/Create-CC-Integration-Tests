@@ -18,10 +18,15 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
-								itemGroups = {},
+								itemGroups = {
+									{
+										id = "minecraft:ingredients",
+										displayName = "Ingredients",
+									},
+								},
 								tags = {
-									["forge:rods/wooden"] = true,
-									["forge:rods"] = true,
+									["c:rods/wooden"] = true,
+									["c:rods"] = true,
 								},
 								count = 1,
 								maxCount = 64,
@@ -49,7 +54,7 @@ local states = {
 					tags = {
 						["create:packages"] = true,
 					},
-					nbt = "ceed8ad969b49055bc14042fc07b6892",
+					nbt = "70cc6780928f8d4bd78c8d842e827a18",
 					count = 1,
 					maxCount = 1,
 					displayName = "Cardboard Package",
@@ -63,7 +68,7 @@ local states = {
 					{
 						name = "create:cardboard_package_12x10",
 						count = 1,
-						nbt = "ceed8ad969b49055bc14042fc07b6892",
+						nbt = "70cc6780928f8d4bd78c8d842e827a18",
 					},
 				},
 			},
