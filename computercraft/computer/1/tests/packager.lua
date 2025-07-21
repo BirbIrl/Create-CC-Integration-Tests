@@ -15,8 +15,18 @@ local states = {
 				["getItemDetail\\withArgs"] = {
 					result = {
 						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
 						count = 64,
 						maxCount = 64,
 						displayName = "Apple",
@@ -86,8 +96,19 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:apple",
-								itemGroups = {},
-								tags = {},
+								itemGroups = {
+									{
+										id = "minecraft:food_and_drinks",
+										displayName = "Food & Drinks",
+									},
+								},
+
+								tags = {
+									["c:foods/fruit"] = true,
+									["c:animal_foods"] = true,
+									["c:foods"] = true,
+									["minecraft:horse_food"] = true,
+								},
 								count = 64,
 								maxCount = 64,
 								displayName = "Apple",
@@ -153,8 +174,18 @@ local states = {
 				["getItemDetail\\withArgs"] = {
 					result = {
 						name = "minecraft:apple",
-						itemGroups = {},
-						tags = {},
+						itemGroups = {
+							{
+								id = "minecraft:food_and_drinks",
+								displayName = "Food & Drinks",
+							},
+						},
+						tags = {
+							["c:foods/fruit"] = true,
+							["c:animal_foods"] = true,
+							["c:foods"] = true,
+							["minecraft:horse_food"] = true,
+						},
 						count = 1,
 						maxCount = 64,
 						displayName = "Apple",
@@ -189,8 +220,18 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:apple",
-								itemGroups = {},
-								tags = {},
+								itemGroups = {
+									{
+										id = "minecraft:food_and_drinks",
+										displayName = "Food & Drinks",
+									},
+								},
+								tags = {
+									["c:foods/fruit"] = true,
+									["c:animal_foods"] = true,
+									["c:foods"] = true,
+									["minecraft:horse_food"] = true,
+								},
 								count = 1,
 								maxCount = 64,
 								displayName = "Apple",
@@ -237,7 +278,12 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:oak_planks",
-								itemGroups = {},
+								itemGroups = {
+									{
+										id = "minecraft:building_blocks",
+										displayName = "Building Blocks",
+									},
+								},
 								tags = {
 									["minecraft:planks"] = true,
 								},
@@ -271,7 +317,12 @@ local states = {
 								["getItemDetail\\withArgs"] = {
 									result = {
 										name = "minecraft:oak_planks",
-										itemGroups = {},
+										itemGroups = {
+											{
+												id = "minecraft:building_blocks",
+												displayName = "Building Blocks",
+											},
+										},
 										tags = {
 											["minecraft:planks"] = true,
 										},
@@ -323,7 +374,7 @@ local states = {
 				result = 27,
 			},
 			["getItemLimit\\withArgs"] = {
-				result = 64,
+				result = 99,
 				_args = {
 					1,
 				},
@@ -331,8 +382,18 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:apple",
-					itemGroups = {},
-					tags = {},
+					itemGroups = {
+						{
+							id = "minecraft:food_and_drinks",
+							displayName = "Food & Drinks",
+						},
+					},
+					tags = {
+						["c:foods/fruit"] = true,
+						["c:animal_foods"] = true,
+						["c:foods"] = true,
+						["minecraft:horse_food"] = true,
+					},
 					count = 64,
 					maxCount = 64,
 					displayName = "Apple",

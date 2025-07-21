@@ -10,5 +10,6 @@
   "peripheral.Create_Frogport": 9,
   "peripheral.Create_DisplayLink": 1,
   "peripheral.create:mechanical_crafter": 0,
-  "peripheral.Create_TableClothShop": 6
+  "peripheral.Create_TableClothShop": 6,
+  "peripheral.create:repackager": 3
 }
