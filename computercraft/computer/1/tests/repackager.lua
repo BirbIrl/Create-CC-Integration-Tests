@@ -1,8 +1,8 @@
 local util = require("..lib.util")
 local pretty = require("cc.pretty")
 local pprint = pretty.pretty_print
-local repackagers = { peripheral.wrap("Create_Repackager_3"), peripheral.wrap("Create_Repackager_4"),
-	peripheral.wrap("Create_Repackager_8"), peripheral.wrap("Create_Repackager_6") }
+local repackagers = { peripheral.wrap("Create_Repackager_12"), peripheral.wrap("Create_Repackager_9"),
+	peripheral.wrap("Create_Repackager_10"), peripheral.wrap("Create_Repackager_11") }
 local barrels = { peripheral.wrap("minecraft:barrel_2"), peripheral.wrap("minecraft:barrel_3"),
 	peripheral.wrap("minecraft:barrel_4"), peripheral.wrap("minecraft:barrel_5") }
 local redstoneRelays = { peripheral.wrap("redstone_relay_0"), peripheral.wrap("redstone_relay_1"), peripheral.wrap(
@@ -166,61 +166,14 @@ local states = {
 						getAddress = {
 							result = "",
 						},
-						["getOrderData\\recursive"] = {
-							result = {
-								getLinkIndex = {
-									result = 1,
-								},
-								["getItemDetail\\withArgs"] = {
-									result = {
-										count = 1,
-										itemGroups = {
-											{
-												id = "minecraft:ingredients",
-												displayName = "Ingredients",
-											},
-										},
-										tags = {
-											["c:rods/wooden"] = true,
-											["c:rods"] = true,
-										},
-										name = "minecraft:stick",
-										maxCount = 64,
-										displayName = "Stick",
-									},
-									_args = {
-										1,
-									},
-								},
-								list = {
-									result = {
-										{
-											name = "minecraft:stick",
-											count = 1,
-										},
-									},
-								},
-								getCrafts = {
-									result = {},
-								},
-								isFinalLink = {
-									result = true,
-								},
-								isFinal = {
-									result = true,
-								},
-								getIndex = {
-									result = 1,
-								},
-							},
-						},
+						getOrderData = {},
 					},
 					itemGroups = {},
-					name = "create:cardboard_package_10x12",
+					name = "create:cardboard_package_10x8",
 					tags = {
 						["create:packages"] = true,
 					},
-					nbt = "f01e0bb6aabd034e808e0aa0b9cd1b40",
+					nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					count = 1,
 					maxCount = 1,
 					displayName = "Cardboard Package",
@@ -232,24 +185,24 @@ local states = {
 			list = {
 				result = {
 					{
-						name = "create:cardboard_package_10x12",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "f01e0bb6aabd034e808e0aa0b9cd1b40",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_10x12",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "f01e0bb6aabd034e808e0aa0b9cd1b40",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_10x12",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "f01e0bb6aabd034e808e0aa0b9cd1b40",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_10x12",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "f01e0bb6aabd034e808e0aa0b9cd1b40",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 				},
 			},
@@ -391,14 +344,36 @@ local states = {
 						getAddress = {
 							result = "originalAddress",
 						},
-						getOrderData = {},
+						["getOrderData\\recursive"] = {
+							result = {
+								getLinkIndex = {
+									result = 2,
+								},
+								["getItemDetail\\withArgs"] = {
+									_args = {
+										1,
+									},
+								},
+								list = {},
+								getCrafts = {},
+								isFinalLink = {
+									result = true,
+								},
+								isFinal = {
+									result = true,
+								},
+								getIndex = {
+									result = 1,
+								},
+							},
+						},
 					},
 					itemGroups = {},
-					name = "create:cardboard_package_12x10",
+					name = "create:cardboard_package_10x8",
 					tags = {
 						["create:packages"] = true,
 					},
-					nbt = "22a7d42022050cfc3a183af1f9e58282",
+					nbt = "53e48d195eb931063b416f840ed85806",
 					count = 1,
 					maxCount = 1,
 					displayName = "Cardboard Package",
@@ -410,9 +385,9 @@ local states = {
 			list = {
 				result = {
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "22a7d42022050cfc3a183af1f9e58282",
+						nbt = "53e48d195eb931063b416f840ed85806",
 					},
 				},
 			},
@@ -431,11 +406,16 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:diamond",
-								itemGroups = {},
+								itemGroups = {
+									{
+										id = "minecraft:ingredients",
+										displayName = "Ingredients",
+									},
+								},
 								tags = {
-									["forge:gems/diamond"] = true,
+									["c:gems/diamond"] = true,
+									["c:gems"] = true,
 									["minecraft:trim_materials"] = true,
-									["forge:gems"] = true,
 									["minecraft:beacon_payment_items"] = true,
 								},
 								count = 4,
@@ -506,14 +486,14 @@ local states = {
 						nbt = "a2c9da698b519a839956ce76bc8f5dc5",
 					},
 					{
-						name = "create:cardboard_package_12x12",
+						name = "create:cardboard_package_12x10",
 						count = 1,
 						nbt = "b311c9c9c3f25a426aab86d3c29ae4e9",
 					},
 					{
-						name = "create:cardboard_package_12x12",
+						name = "create:cardboard_package_12x10",
 						count = 1,
-						nbt = "3b4c9133962640feca4df20b20302471",
+						nbt = "94cd41fe091a5fc5b07e984b4a0b5fbe",
 					},
 				},
 			},
@@ -529,10 +509,15 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
-								itemGroups = {},
+								itemGroups = {
+									{
+										id = "minecraft:ingredients",
+										displayName = "Ingredients",
+									},
+								},
 								tags = {
-									["forge:rods/wooden"] = true,
-									["forge:rods"] = true,
+									["c:rods/wooden"] = true,
+									["c:rods"] = true,
 								},
 								count = 1,
 								maxCount = 64,
@@ -559,11 +544,11 @@ local states = {
 						getOrderData = {},
 					},
 					itemGroups = {},
-					name = "create:cardboard_package_12x10",
+					name = "create:cardboard_package_10x8",
 					tags = {
 						["create:packages"] = true,
 					},
-					nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					count = 1,
 					maxCount = 1,
 					displayName = "Cardboard Package",
@@ -575,24 +560,24 @@ local states = {
 			list = {
 				result = {
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 				},
 			},
@@ -608,10 +593,15 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
-								itemGroups = {},
+								itemGroups = {
+									{
+										id = "minecraft:ingredients",
+										displayName = "Ingredients",
+									},
+								},
 								tags = {
-									["forge:rods/wooden"] = true,
-									["forge:rods"] = true,
+									["c:rods/wooden"] = true,
+									["c:rods"] = true,
 								},
 								count = 1,
 								maxCount = 64,
@@ -638,11 +628,11 @@ local states = {
 						getOrderData = {},
 					},
 					itemGroups = {},
-					name = "create:cardboard_package_12x10",
+					name = "create:cardboard_package_10x8",
 					tags = {
 						["create:packages"] = true,
 					},
-					nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+					nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					count = 1,
 					maxCount = 1,
 					displayName = "Cardboard Package",
@@ -654,24 +644,24 @@ local states = {
 			list = {
 				result = {
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 					{
-						name = "create:cardboard_package_12x10",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "a0c95ad7b74cb3804b945fb2f69724b2",
+						nbt = "e6bb7d8692e6cee3e2392a9d56c6eb0a",
 					},
 				},
 			},
@@ -687,10 +677,15 @@ local states = {
 						["getItemDetail\\withArgs"] = {
 							result = {
 								name = "minecraft:stick",
-								itemGroups = {},
+								itemGroups = {
+									{
+										id = "minecraft:ingredients",
+										displayName = "Ingredients",
+									},
+								},
 								tags = {
-									["forge:rods/wooden"] = true,
-									["forge:rods"] = true,
+									["c:rods/wooden"] = true,
+									["c:rods"] = true,
 								},
 								count = 1,
 								maxCount = 64,
@@ -739,11 +734,11 @@ local states = {
 						},
 					},
 					itemGroups = {},
-					name = "create:cardboard_package_10x12",
+					name = "create:cardboard_package_10x8",
 					tags = {
 						["create:packages"] = true,
 					},
-					nbt = "d737660ea29804f4772ee62c6e6613ea",
+					nbt = "53e48d195eb931063b416f840ed85806",
 					count = 1,
 					maxCount = 1,
 					displayName = "Cardboard Package",
@@ -755,13 +750,14 @@ local states = {
 			list = {
 				result = {
 					{
-						name = "create:cardboard_package_10x12",
+						name = "create:cardboard_package_10x8",
 						count = 1,
-						nbt = "d737660ea29804f4772ee62c6e6613ea",
+						nbt = "53e48d195eb931063b416f840ed85806",
 					},
 				},
 			},
 		},
+
 	},
 	packages = {
 		{
@@ -775,9 +771,9 @@ local states = {
 						},
 					},
 					tags = {
-						["forge:gems/diamond"] = true,
+						["c:gems/diamond"] = true,
+						["c:gems"] = true,
 						["minecraft:trim_materials"] = true,
-						["forge:gems"] = true,
 						["minecraft:beacon_payment_items"] = true,
 					},
 					count = 1,
@@ -861,10 +857,15 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:stick",
-					itemGroups = {},
+					itemGroups = {
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
-						["forge:rods/wooden"] = true,
-						["forge:rods"] = true,
+						["c:rods/wooden"] = true,
+						["c:rods"] = true,
 					},
 					count = 1,
 					maxCount = 64,
@@ -897,10 +898,15 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:stick",
-					itemGroups = {},
+					itemGroups = {
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
-						["forge:rods/wooden"] = true,
-						["forge:rods"] = true,
+						["c:rods/wooden"] = true,
+						["c:rods"] = true,
 					},
 					count = 1,
 					maxCount = 64,
@@ -930,10 +936,15 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:stick",
-					itemGroups = {},
+					itemGroups = {
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
-						["forge:rods/wooden"] = true,
-						["forge:rods"] = true,
+						["c:rods/wooden"] = true,
+						["c:rods"] = true,
 					},
 					count = 1,
 					maxCount = 64,

@@ -4,7 +4,7 @@
   "peripheral.minecraft:barrel": 15,
   "peripheral.Create_Packager": 16,
   "peripheral.Create_RedstoneRequester": 3,
-  "peripheral.Create_Repackager": 8,
+  "peripheral.Create_Repackager": 12,
   "peripheral.redstone_relay": 2,
   "peripheral.Create_StockTicker": 7,
   "peripheral.Create_Frogport": 9,
