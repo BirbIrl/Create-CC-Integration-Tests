@@ -11,7 +11,7 @@ local states = {
 				result = 27,
 			},
 			["getItemLimit\\withArgs"] = {
-				result = 64,
+				result = 99,
 				_args = {
 					1,
 				},
@@ -30,7 +30,7 @@ local states = {
 				result = 27,
 			},
 			["getItemLimit\\withArgs"] = {
-				result = 64,
+				result = 99,
 				_args = {
 					1,
 				},
@@ -38,8 +38,18 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:apple",
-					itemGroups = {},
-					tags = {},
+					itemGroups = {
+						{
+							id = "minecraft:food_and_drinks",
+							displayName = "Food & Drinks",
+						},
+					},
+					tags = {
+						["c:foods/fruit"] = true,
+						["c:animal_foods"] = true,
+						["c:foods"] = true,
+						["minecraft:horse_food"] = true,
+					},
 					count = 64,
 					maxCount = 64,
 					displayName = "Apple",
@@ -62,7 +72,7 @@ local states = {
 				result = 27,
 			},
 			["getItemLimit\\withArgs"] = {
-				result = 64,
+				result = 99,
 				_args = {
 					1,
 				},
@@ -70,10 +80,15 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:stick",
-					itemGroups = {},
+					itemGroups = {
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
-						["forge:rods/wooden"] = true,
-						["forge:rods"] = true,
+						["c:rods/wooden"] = true,
+						["c:rods"] = true,
 					},
 					count = 2,
 					maxCount = 64,
@@ -101,7 +116,7 @@ local states = {
 				result = 27,
 			},
 			["getItemLimit\\withArgs"] = {
-				result = 64,
+				result = 99,
 				_args = {
 					1,
 				},
@@ -109,11 +124,20 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:redstone",
-					itemGroups = {},
+					itemGroups = {
+						{
+							id = "minecraft:redstone_blocks",
+							displayName = "Redstone Blocks",
+						},
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
-						["forge:dusts"] = true,
+						["c:dusts"] = true,
 						["minecraft:trim_materials"] = true,
-						["forge:dusts/redstone"] = true,
+						["c:dusts/redstone"] = true,
 					},
 					count = 64,
 					maxCount = 64,
@@ -137,28 +161,38 @@ local states = {
 				result = 27,
 			},
 			["getItemLimit\\withArgs"] = {
-				result = 64,
+				result = 99,
 				_args = {
 					1,
 				},
 			},
 			["getItemDetail\\withArgs"] = {
 				result = {
-					tags = {
-						["minecraft:pickaxes"] = true,
-						["minecraft:breaks_decorated_pots"] = true,
-						["forge:tools"] = true,
-						["minecraft:cluster_max_harvestables"] = true,
-						["minecraft:tools"] = true,
+					damage = 0,
+					itemGroups = {
+						{
+							id = "minecraft:tools_and_utilities",
+							displayName = "Tools & Utilities",
+						},
 					},
-					nbt = "552887824c43124013fd24f6edcde0fb",
-					displayName = "Diamond Pickaxe",
 					name = "minecraft:diamond_pickaxe",
-					itemGroups = {},
+					tags = {
+						["c:tools"] = true,
+						["minecraft:enchantable/durability"] = true,
+						["minecraft:enchantable/vanishing"] = true,
+						["minecraft:pickaxes"] = true,
+						["minecraft:enchantable/mining_loot"] = true,
+						["minecraft:cluster_max_harvestables"] = true,
+						["minecraft:enchantable/mining"] = true,
+						["minecraft:trimmable_armor"] = true,
+						["minecraft:breaks_decorated_pots"] = true,
+						["c:tools/mining_tool"] = true,
+						["c:enchantables"] = true,
+					},
 					maxDamage = 1561,
 					count = 1,
 					maxCount = 1,
-					damage = 0,
+					displayName = "Diamond Pickaxe",
 				},
 				_args = {
 					1,
@@ -169,11 +203,11 @@ local states = {
 					{
 						name = "minecraft:diamond_pickaxe",
 						count = 1,
-						nbt = "552887824c43124013fd24f6edcde0fb",
 					},
 				},
 			},
 		},
+
 	},
 	packagers = {
 		{
@@ -184,8 +218,18 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:apple",
-					itemGroups = {},
-					tags = {},
+					itemGroups = {
+						{
+							id = "minecraft:food_and_drinks",
+							displayName = "Food & Drinks",
+						},
+					},
+					tags = {
+						["c:foods/fruit"] = true,
+						["c:animal_foods"] = true,
+						["c:foods"] = true,
+						["minecraft:horse_food"] = true,
+					},
 					count = 64,
 					maxCount = 64,
 					displayName = "Apple",
@@ -211,11 +255,20 @@ local states = {
 			["getItemDetail\\withArgs"] = {
 				result = {
 					name = "minecraft:redstone",
-					itemGroups = {},
+					itemGroups = {
+						{
+							id = "minecraft:redstone_blocks",
+							displayName = "Redstone Blocks",
+						},
+						{
+							id = "minecraft:ingredients",
+							displayName = "Ingredients",
+						},
+					},
 					tags = {
-						["forge:dusts"] = true,
+						["c:dusts"] = true,
 						["minecraft:trim_materials"] = true,
-						["forge:dusts/redstone"] = true,
+						["c:dusts/redstone"] = true,
 					},
 					count = 64,
 					maxCount = 64,
@@ -234,6 +287,7 @@ local states = {
 				},
 			},
 		},
+
 		{
 			getPackage = {},
 			getAddress = {
@@ -262,17 +316,23 @@ local states = {
 			},
 			["getPackage\\recursive"] = {
 				result = {
-					isEditable = {
-						result = true,
-					},
 					["getItemDetail\\withArgs"] = {
 						result = {
 							name = "minecraft:redstone",
-							itemGroups = {},
+							itemGroups = {
+								{
+									id = "minecraft:redstone_blocks",
+									displayName = "Redstone Blocks",
+								},
+								{
+									id = "minecraft:ingredients",
+									displayName = "Ingredients",
+								},
+							},
 							tags = {
-								["forge:dusts"] = true,
+								["c:dusts"] = true,
 								["minecraft:trim_materials"] = true,
-								["forge:dusts/redstone"] = true,
+								["c:dusts/redstone"] = true,
 							},
 							count = 64,
 							maxCount = 64,
@@ -290,6 +350,9 @@ local states = {
 							},
 						},
 					},
+					isEditable = {
+						result = true,
+					},
 					getAddress = {
 						result = "originalAddress",
 					},
@@ -300,14 +363,23 @@ local states = {
 							},
 							["getItemDetail\\withArgs"] = {
 								result = {
-									name = "minecraft:redstone",
-									itemGroups = {},
-									tags = {
-										["forge:dusts"] = true,
-										["minecraft:trim_materials"] = true,
-										["forge:dusts/redstone"] = true,
-									},
 									count = 256,
+									itemGroups = {
+										{
+											id = "minecraft:redstone_blocks",
+											displayName = "Redstone Blocks",
+										},
+										{
+											id = "minecraft:ingredients",
+											displayName = "Ingredients",
+										},
+									},
+									tags = {
+										["c:dusts"] = true,
+										["minecraft:trim_materials"] = true,
+										["c:dusts/redstone"] = true,
+									},
+									name = "minecraft:redstone",
 									maxCount = 64,
 									displayName = "Redstone Dust",
 								},
@@ -354,14 +426,21 @@ local states = {
 			},
 			["getPackage\\recursive"] = {
 				result = {
-					isEditable = {
-						result = true,
-					},
 					["getItemDetail\\withArgs"] = {
 						result = {
 							name = "minecraft:apple",
-							itemGroups = {},
-							tags = {},
+							itemGroups = {
+								{
+									id = "minecraft:food_and_drinks",
+									displayName = "Food & Drinks",
+								},
+							},
+							tags = {
+								["c:foods/fruit"] = true,
+								["c:animal_foods"] = true,
+								["c:foods"] = true,
+								["minecraft:horse_food"] = true,
+							},
 							count = 64,
 							maxCount = 64,
 							displayName = "Apple",
@@ -378,6 +457,9 @@ local states = {
 							},
 						},
 					},
+					isEditable = {
+						result = true,
+					},
 					getAddress = {
 						result = "",
 					},
@@ -388,10 +470,20 @@ local states = {
 							},
 							["getItemDetail\\withArgs"] = {
 								result = {
-									name = "minecraft:apple",
-									itemGroups = {},
-									tags = {},
 									count = 64,
+									itemGroups = {
+										{
+											id = "minecraft:food_and_drinks",
+											displayName = "Food & Drinks",
+										},
+									},
+									tags = {
+										["c:foods/fruit"] = true,
+										["c:animal_foods"] = true,
+										["c:foods"] = true,
+										["minecraft:horse_food"] = true,
+									},
+									name = "minecraft:apple",
 									maxCount = 64,
 									displayName = "Apple",
 								},
@@ -469,14 +561,23 @@ local states = {
 			getRequest = {
 				result = {
 					{
-						name = "minecraft:redstone",
-						itemGroups = {},
-						tags = {
-							["forge:dusts"] = true,
-							["minecraft:trim_materials"] = true,
-							["forge:dusts/redstone"] = true,
-						},
 						count = 256,
+						itemGroups = {
+							{
+								id = "minecraft:redstone_blocks",
+								displayName = "Redstone Blocks",
+							},
+							{
+								id = "minecraft:ingredients",
+								displayName = "Ingredients",
+							},
+						},
+						tags = {
+							["c:dusts"] = true,
+							["minecraft:trim_materials"] = true,
+							["c:dusts/redstone"] = true,
+						},
+						name = "minecraft:redstone",
 						maxCount = 64,
 						displayName = "Redstone Dust",
 					},
